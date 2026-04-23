@@ -26,7 +26,7 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v4
               with:
-                fetch-depth:0
+                fetch-depth: 0
 
               # TruffleHog scans code + commit history for verified secrets (live creds). It can be noisy, but is a great first line of defense.
             - name: Run TruffleHog
